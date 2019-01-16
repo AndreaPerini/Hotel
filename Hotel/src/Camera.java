@@ -45,7 +45,4 @@ public class Camera {
 		this.clienti = clienti;
 	}
 	
-	
-	
-	
 }

@@ -3,6 +3,17 @@ import java.util.*;
 public class Avvia {
 
 	public static void main(String[] args) {
+		Camera c;
+		
+		
+		System.out.println("Inserisci i dati delle 20 camere: ");
+		
+		System.out.println("Inserisci il prezzo minimo: ");
+		
+		System.out.println("Inserisci il prezzo massimo: ");
+		
+		System.out.println("Inserisci il numero di posti letto: ");
+		
 		
 	}
 

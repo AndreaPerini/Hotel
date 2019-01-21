@@ -4,13 +4,15 @@ public class Camera {
 	private float prezzoMinimo;
 	private float prezzoMassimo;
 	private int numeroPostiLetto;
-	private Cliente [] clienti = new Cliente [365];
-	
-	public Camera(float prezzoMinimo, float prezzoMassimo, int numeroPostiLetto, Cliente[] clienti) {
+	private Cliente[] clienti = new Cliente[365];
+
+	public Camera(float prezzoMinimo, float prezzoMassimo, int numeroPostiLetto) {
 		this.prezzoMinimo = prezzoMinimo;
 		this.prezzoMassimo = prezzoMassimo;
 		this.numeroPostiLetto = numeroPostiLetto;
-		this.clienti = clienti;
+		for (int i = 0; i < clienti.length; i++) {
+			clienti[i] = null;
+		}
 	}
 
 	public float getPrezzoMinimo() {
@@ -44,5 +46,5 @@ public class Camera {
 	public void setClienti(Cliente[] clienti) {
 		this.clienti = clienti;
 	}
-	
+
 }

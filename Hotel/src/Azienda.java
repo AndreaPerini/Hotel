@@ -4,8 +4,9 @@ public class Azienda extends Cliente {
 	private String nomeAzienda;
 	private int partitaIVA;
 	private String indirizzoFatturazione;
-	
-	public Azienda(String nome, String cognome, int numeroTelefono, String nomeAzienda, int partitaIVA, String indirizzoFatturazione) {
+
+	public Azienda(String nome, String cognome, int numeroTelefono, String nomeAzienda, int partitaIVA,
+			String indirizzoFatturazione) {
 		super(nome, cognome, numeroTelefono);
 		this.nomeAzienda = nomeAzienda;
 		this.partitaIVA = partitaIVA;
@@ -35,8 +36,4 @@ public class Azienda extends Cliente {
 	public void setIndirizzoFatturazione(String indirizzoFatturazione) {
 		this.indirizzoFatturazione = indirizzoFatturazione;
 	}
-	
-	
-	
-	
 }

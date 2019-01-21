@@ -11,21 +11,20 @@ public class Hotel {
 
 	public void aggiungiCliente(int numeroCamera, Cliente cliente, int dataDa, int dataA) {
 		boolean vuota = true;
-		for(int i=dataDa; i<dataA; i++) {
-			if(hotel[numeroCamera-1].getClienti()[i] != null) {
+		for (int i = dataDa; i < dataA; i++) {
+			if (hotel[numeroCamera - 1].getClienti()[i] != null) {
 				vuota = false;
 			}
 		}
-		if(vuota) {
-			for(int i=dataDa; i<dataA; i++) {
-				hotel[numeroCamera-1].getClienti()[i] = cliente;
+		if (vuota) {
+			for (int i = dataDa; i < dataA; i++) {
+				hotel[numeroCamera - 1].getClienti()[i] = cliente;
 			}
-		}
-		else {
+		} else {
 			System.out.println("La camera non è disponibile per questo periodo");
 		}
 	}
-	
+
 	public void camereLiberePeriodo(int dataDa, int dataA) {
 		boolean libera = true;
 		for (int i = 0; i < hotel.length; i++) {
@@ -49,9 +48,9 @@ public class Hotel {
 					for (int k = j; k < hotel[i].getClienti().length; k++) {
 						if ((hotel[i].getClienti()[j].getNome().equalsIgnoreCase(nome))
 								&& (hotel[i].getClienti()[j].getCognome().equalsIgnoreCase(cognome))) {
-						}
-						else {
-							System.out.println("Il cliente " + nome + " " + cognome + " occupa la stanza " + i+1 + " dal giorno " + j + " al giorno " + k);
+						} else {
+							System.out.println("Il cliente " + nome + " " + cognome + " occupa la stanza " + i + 1
+									+ " dal giorno " + j + " al giorno " + k);
 							trovato = true;
 							k = hotel[i].getClienti().length;
 						}
@@ -59,17 +58,18 @@ public class Hotel {
 				}
 			}
 		}
-		if(!trovato) {
+		if (!trovato) {
 			System.out.println("Il cliente non è stato trovato");
 		}
 	}
 
 	public void controllaCamera(int numeroCamera, int data) {
-		if(hotel[numeroCamera-1].getClienti()[data]==null) {
+		if (hotel[numeroCamera - 1].getClienti()[data] == null) {
 			System.out.println("La camera " + numeroCamera + " è libera nel giorno " + data);
-		}
-		else {
-			System.out.println("La camera " + numeroCamera + " il giorno " + data + " è occupata dal cliente " + hotel[numeroCamera-1].getClienti()[data].getNome() + " " + hotel[numeroCamera-1].getClienti()[data].getCognome());
+		} else {
+			System.out.println("La camera " + numeroCamera + " il giorno " + data + " è occupata dal cliente "
+					+ hotel[numeroCamera - 1].getClienti()[data].getNome() + " "
+					+ hotel[numeroCamera - 1].getClienti()[data].getCognome());
 		}
 	}
 

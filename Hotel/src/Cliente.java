@@ -4,7 +4,7 @@ public class Cliente {
 	private String nome;
 	private String Cognome;
 	private int numeroTelefono;
-	
+
 	public Cliente(String nome, String cognome, int numeroTelefono) {
 		this.nome = nome;
 		Cognome = cognome;
@@ -34,7 +34,5 @@ public class Cliente {
 	public void setNumeroTelefono(int numeroTelefono) {
 		this.numeroTelefono = numeroTelefono;
 	}
-	
-	
-	
+
 }

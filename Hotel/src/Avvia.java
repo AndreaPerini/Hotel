@@ -1,15 +1,14 @@
-import java.time.LocalDate;
 import java.util.*;
 
 public class Avvia {
 
 	public static void main(String[] args) {
-		Camera c = null;
+		Camera c = new Camera(0, 0, 0);
 		Scanner sc = new Scanner(System.in);
-		Hotel h = null;
+		Hotel h = new Hotel();
 		boolean termina = false;
-		Cliente cli = null;
-		Azienda a = null;
+		Cliente cli = new Cliente(null, null, 0);
+		Azienda a = new Azienda(null, null, 0, null, 0, null);
 		int nCamera, dataDa, dataA;
 		String nome, cognome;
 		System.out.println("Inserisci i dati delle 20 camere: ");
@@ -87,5 +86,6 @@ public class Avvia {
 				termina = true;
 			}
 		} while (!termina);
+		sc.close();
 	}
 }

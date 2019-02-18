@@ -3,12 +3,12 @@ import java.util.*;
 public class Avvia {
 
 	public static void main(String[] args) {
-		Camera c = new Camera(0, 0, 0);
+		Camera c = new Camera();
 		Scanner sc = new Scanner(System.in);
 		Hotel h = new Hotel();
 		boolean termina = false;
-		Cliente cli = new Cliente(null, null, 0);
-		Azienda a = new Azienda(null, null, 0, null, 0, null);
+		Cliente cli = new Cliente();
+		Azienda a = new Azienda();
 		int nCamera, dataDa, dataA;
 		String nome, cognome;
 		System.out.println("Inserisci i dati delle 20 camere: ");

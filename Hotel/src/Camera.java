@@ -15,6 +15,9 @@ public class Camera {
 		}
 	}
 
+	public Camera() {
+	}
+
 	public float getPrezzoMinimo() {
 		return prezzoMinimo;
 	}

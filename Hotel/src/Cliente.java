@@ -11,6 +11,9 @@ public class Cliente {
 		this.numeroTelefono = numeroTelefono;
 	}
 
+	public Cliente() {
+	}
+
 	public String getNome() {
 		return nome;
 	}
